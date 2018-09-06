@@ -1,20 +1,5 @@
 server:
   port: 8765
-spring:
-  cloud:
-    config:
-      discovery:
-        enabled: true
-      server:
-        encrypt.enabled: false
-        git:
-          uri: https://github.com/carnellj/config-repo/
-          searchPaths: licensingservice,organizationservice,specialroutesservice,zuulservice,authenticationservice
-          username: native-cloud-apps
-          password: 0ffended
-      profile: prod
-
-
 ####
 #Classpath and file-based solution
 ####

@@ -12,7 +12,6 @@ spring:
           searchPaths: conf
           username: liuxuleigitpub
           password: nE8OM@sa%
-      profile: prod
 
 ####
 #Classpath and file-based solution
@@ -30,6 +29,12 @@ spring:
 #              searchLocations: file://<chapter 3>/confsvr/src/main/resources/config/licensingservice,
 #                               file://<chapter 3>confsvr/src/main/resources/config/organizationservice
 ##              #searchLocations: classpath:config/,classpath:config/licensingservice
+
+
+security:
+  user:
+    name: config
+    password: 123456
 
 
 #Setting logging levels

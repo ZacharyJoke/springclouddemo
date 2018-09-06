@@ -1,4 +1,20 @@
 spring:
   application:
     name: zuulser
+  cloud:
+    config:
+      fail-fast: true
+      discovery:
+        enabled: true
+        service-id: config-server
+      profile: prod
+      label: master
+      username: config
+      password: 123456
+    inetutils:
+      use-only-site-local-interfaces: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka:Password001@hadoop01:9520/eureka/,http://eureka:Password001@hadoop02:9520/eureka/,http://eureka:Password001@hadoop03:9520/eureka/
 
