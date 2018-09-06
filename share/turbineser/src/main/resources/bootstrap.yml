@@ -3,8 +3,6 @@ spring:
     name: turbineser
 server:
   port: 8767
-management:
-  port: 9524
 eureka:
   instance:
     lease-expiration-duration-in-seconds: 20
