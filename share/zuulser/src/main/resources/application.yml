@@ -1,0 +1,41 @@
+server:
+  port: 8765
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+      server:
+        encrypt.enabled: false
+        git:
+          uri: https://github.com/carnellj/config-repo/
+          searchPaths: licensingservice,organizationservice,specialroutesservice,zuulservice,authenticationservice
+          username: native-cloud-apps
+          password: 0ffended
+      profile: prod
+
+
+####
+#Classpath and file-based solution
+####
+
+#server:
+#   port: 8888
+#spring:
+#  profiles:
+#    active: native
+#  cloud:
+#     config:
+#       server:
+#           native:
+#              searchLocations: file://<chapter 3>/confsvr/src/main/resources/config/licensingservice,
+#                               file://<chapter 3>confsvr/src/main/resources/config/organizationservice
+##              #searchLocations: classpath:config/,classpath:config/licensingservice
+
+
+#Setting logging levels
+logging:
+  level:
+    com.netflix: WARN
+    org.springframework.web: WARN
+    com.thoughtmechanix: DEBUG
