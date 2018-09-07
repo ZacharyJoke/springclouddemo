@@ -15,7 +15,6 @@ spring:
              defaultBrokerPort: 9092
              zkNodes: 127.0.0.1
              defaultZkPort: 2181
-             minPartitionCount: 1
              autoCreateTopics: true
              autoAddPartitions: true
 
