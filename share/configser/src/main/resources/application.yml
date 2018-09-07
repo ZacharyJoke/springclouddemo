@@ -12,15 +12,15 @@ spring:
           searchPaths: conf
           username: liuxuleigitpub
           password: nE8OM@sa%
-  stream:
-    kafka:
-      binder:
-        brokers: 127.0.0.1
-        defaultBrokerPort: 9092
-        zkNodes: 127.0.0.1
-        defaultZkPort: 2181
-        autoCreateTopics: true
-        autoAddPartitions: true
+    stream:
+      kafka:
+        binder:
+          brokers: 192.168.1.81
+          defaultBrokerPort: 9092
+          zkNodes: 192.168.1.81
+          defaultZkPort: 2181
+          autoCreateTopics: true
+          autoAddPartitions: true
 
 ####
 #Classpath and file-based solution
