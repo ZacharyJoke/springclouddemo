@@ -1,14 +1,6 @@
 server:
   port: 8766
 
-#Setting logging levels
-logging:
-  level:
-    com.netflix: WARN
-    org.springframework.web: WARN
-    com.thoughtmechanix: DEBUG
-
-
 eureka:
   instance:
     lease-expiration-duration-in-seconds: 20

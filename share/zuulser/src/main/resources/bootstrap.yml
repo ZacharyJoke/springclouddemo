@@ -2,6 +2,15 @@ spring:
   application:
     name: zuulser
   cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: 127.0.0.1
+          defaultBrokerPort: 9092
+          zkNodes: 127.0.0.1
+          defaultZkPort: 2181
+          autoCreateTopics: true
+          autoAddPartitions: true
     config:
       fail-fast: true
       discovery:
@@ -18,3 +27,27 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka/
 
+zuul:
+  semaphore:
+    max-semaphores: 30000    #Hystrix最大的并发请求
+  retryable: true
+  ignoredServices: '*' #忽略默认路由，手动创建路由规则，防止生产者路由暴露
+  routes:
+    consumerser:
+      path: /api/**
+      serviceId: consumerser
+
+consumerser:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.WeightedResponseTimeRule
+    ConnectTimeout: 1000
+    ReadTimeout: 3000
+    MaxTotalHttpConnections: 500
+    MaxConnectionsPerHost: 100
+
+
+#  * NFLoadBalancerClassName: should implement ILoadBalancer
+#  * NFLoadBalanceerRuleClassName: should implement IRuld
+#  * NFLoadBalancePingClassName: should implement IPing
+#  * NIWSServerListClassName: should implement ServerList
+#  * NIWServerListFilterClassName: should implement ServerListFilter

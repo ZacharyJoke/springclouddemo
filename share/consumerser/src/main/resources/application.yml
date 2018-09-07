@@ -34,12 +34,3 @@ feign:  ##集成feign时启用hystrix
   hystrix:
     enabled: true
 
-
-
-
-#Setting logging levels
-logging:
-  level:
-    com.netflix: WARN
-    org.springframework.web: WARN
-    com.thoughtmechanix: DEBUG

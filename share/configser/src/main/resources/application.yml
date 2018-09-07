@@ -56,9 +56,3 @@ security:
     password: 123456
 
 
-#Setting logging levels
-logging:
-  level:
-    com.netflix: WARN
-    org.springframework.web: WARN
-    com.thoughtmechanix: DEBUG
