@@ -19,18 +19,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="configser" target="1.8" />
-      <module name="consumerser" target="1.8" />
-      <module name="eurakeser" target="1.8" />
       <module name="hellocons2" target="1.8" />
       <module name="helloconsumer2" target="1.8" />
       <module name="helloser2" target="1.8" />
-      <module name="oauthser" target="1.8" />
-      <module name="productorser" target="1.8" />
-      <module name="share" target="1.8" />
-      <module name="turbineser" target="1.8" />
-      <module name="zipkinser" target="1.8" />
-      <module name="zuulser" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

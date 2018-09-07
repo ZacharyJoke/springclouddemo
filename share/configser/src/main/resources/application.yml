@@ -12,6 +12,15 @@ spring:
           searchPaths: conf
           username: liuxuleigitpub
           password: nE8OM@sa%
+  stream:
+    kafka:
+      binder:
+        brokers: 127.0.0.1
+        defaultBrokerPort: 9092
+        zkNodes: 127.0.0.1
+        defaultZkPort: 2181
+        autoCreateTopics: true
+        autoAddPartitions: true
 
 ####
 #Classpath and file-based solution
@@ -33,11 +42,11 @@ spring:
 eureka:
   instance:
     lease-expiration-duration-in-seconds: 20
+    lease-renewal-interval-in-seconds: 10
     prefer-ip-address: true
     instance-id: ${spring.cloud.client.ipAddress}:${server.port}:${spring.application.name}
   client:
     registry-fetch-interval-seconds: 10
-    lease-renewal-interval-in-seconds: 10
     healthcheck:
       enabled: true
 
