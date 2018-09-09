@@ -1,4 +1,4 @@
-package com.share.helloconsumer.annotation;
+package com.share.consumerser.annotation;
 
 
 import org.springframework.cloud.stream.annotation.Input;

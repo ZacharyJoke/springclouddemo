@@ -1,9 +1,9 @@
-package com.share.helloconsumer.control;
+package com.share.consumerser.control;
 
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import com.share.helloconsumer.api.HelloApi;
-import com.share.helloconsumer.bean.User;
+import com.share.consumerser.api.HelloApi;
+import com.share.consumerser.bean.User;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;

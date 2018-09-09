@@ -1,4 +1,4 @@
-package com.share.helloconsumer;
+package com.share.consumerser;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

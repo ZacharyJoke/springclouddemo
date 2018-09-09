@@ -1,4 +1,4 @@
-package com.share.helloconsumer.bean;
+package com.share.consumerser.bean;
 
 public class User {
 

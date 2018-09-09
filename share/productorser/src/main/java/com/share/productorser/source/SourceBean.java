@@ -28,7 +28,7 @@ public class SourceBean {
         this.customChannels = customChannels;
     }
 
-//    public void defaultPublish(String message,String action,String orgId){
+//    public void defaultPublish(String message,String orgId,String action){
 //        logger.info("defult Sending Kafka message {}", action, orgId);
 //        UserMessage change =  new UserMessage(
 //                message,
@@ -38,7 +38,7 @@ public class SourceBean {
 //        source.output().send(MessageBuilder.withPayload(change).build());
 //    }
 
-    public void customPublish(String message, String action,String orgId){
+    public void customPublish(String message,String orgId, String action){
 
         logger.info("custom Sending Kafka message {}", action, orgId);
         UserMessage change =  new UserMessage(
@@ -49,7 +49,7 @@ public class SourceBean {
         customChannels.sendMessage().send(MessageBuilder.withPayload(change).build());
     }
 
-    public void customPublish2(String message ,String action,String orgId){
+    public void customPublish2(String message ,String orgId,String action){
        logger.info("custom2 Sending Kafka message {}", action, orgId);
         UserMessage change =  new UserMessage(
                 message,

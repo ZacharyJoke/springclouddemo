@@ -1,6 +1,6 @@
-package com.share.helloconsumer.api;
+package com.share.consumerser.api;
 
-import com.share.helloconsumer.bean.User;
+import com.share.consumerser.bean.User;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
