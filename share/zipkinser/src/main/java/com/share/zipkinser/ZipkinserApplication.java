@@ -8,7 +8,7 @@ import zipkin.server.internal.EnableZipkinServer;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableZipkinStreamServer
+@EnableZipkinStreamServer   //集成消息队列启用注解
 //@EnableZipkinServer   //http方式追踪
 public class ZipkinserApplication {
 

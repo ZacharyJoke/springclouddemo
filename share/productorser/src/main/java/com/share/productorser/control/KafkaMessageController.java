@@ -36,7 +36,7 @@ public class KafkaMessageController {
         return message;
     }
 
-//    @RequestMapping(value="kafkaDefault/{id}",method = RequestMethod.GET)//kafka自定义通道发送消息
+//    @RequestMapping(value="kafkaDefault/{id}",method = RequestMethod.GET)//kafka默认通道发送消息
 //    public UserMessage getMessageDefault(@PathVariable("id") String id) {
 //        logger.info("Looking up data for org {} with id {}", id);
 //

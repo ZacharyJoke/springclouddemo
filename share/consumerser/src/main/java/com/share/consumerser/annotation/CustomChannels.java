@@ -4,6 +4,7 @@ package com.share.consumerser.annotation;
 import org.springframework.cloud.stream.annotation.Input;
 import org.springframework.messaging.SubscribableChannel;
 
+//自定义消息通道input
 public interface CustomChannels {
 
 

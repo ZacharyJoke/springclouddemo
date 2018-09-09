@@ -43,7 +43,7 @@ public class ApiController {
     public  User defaultUser(String userId){ //参数必须保持一致 否则报错 不能找到方法
         User user =  new User();
         user.setId(userId);
-        user.setName("defaultuser");
+        user.setName("defaultUserForError");
         return user;
     }
 

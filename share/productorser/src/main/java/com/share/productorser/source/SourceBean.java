@@ -38,6 +38,7 @@ public class SourceBean {
 //        source.output().send(MessageBuilder.withPayload(change).build());
 //    }
 
+    //通过自定义消息通道发送消息
     public void customPublish(String message,String orgId, String action){
 
         logger.info("custom Sending Kafka message {}", action, orgId);

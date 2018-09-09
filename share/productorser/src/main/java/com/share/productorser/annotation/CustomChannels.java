@@ -3,6 +3,7 @@ package com.share.productorser.annotation;
 import org.springframework.cloud.stream.annotation.Output;
 import org.springframework.messaging.MessageChannel;
 
+//自定义消息通道output
 public interface CustomChannels {
 
     String OUT_OUTPUT = "outboundOrgChanges";
