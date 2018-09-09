@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d971fa0-36a8-45df-80f0-1e25e56f2ed8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/consumerser/src/main/java/com/share/helloconsumer/control/MessageListener.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/productorser/src/main/java/com/share/productorser/source/SourceBean.java" afterPath="$PROJECT_DIR$/productorser/src/main/java/com/share/productorser/source/SourceBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/turbineser/src/main/resources/bootstrap.yml" afterPath="$PROJECT_DIR$/turbineser/src/main/resources/bootstrap.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/consumerser/src/main/java/com/share/helloconsumer/ConsumerSerApplication.java" afterPath="$PROJECT_DIR$/consumerser/src/main/java/com/share/consumerser/ConsumerSerApplication.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/consumerser/src/main/java/com/share/helloconsumer/annotation/CustomChannels.java" afterPath="$PROJECT_DIR$/consumerser/src/main/java/com/share/consumerser/annotation/CustomChannels.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/consumerser/src/main/java/com/share/helloconsumer/api/HelloApi.java" afterPath="$PROJECT_DIR$/consumerser/src/main/java/com/share/consumerser/api/HelloApi.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/consumerser/src/main/java/com/share/helloconsumer/bean/User.java" afterPath="$PROJECT_DIR$/consumerser/src/main/java/com/share/consumerser/bean/User.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/consumerser/src/main/java/com/share/helloconsumer/bean/UserMessage.java" afterPath="$PROJECT_DIR$/consumerser/src/main/java/com/share/consumerser/bean/UserMessage.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/consumerser/src/main/java/com/share/helloconsumer/control/ApiController.java" afterPath="$PROJECT_DIR$/consumerser/src/main/java/com/share/consumerser/control/ApiController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/consumerser/src/test/java/com/share/helloconsumer/ConsumerSerApplicationTests.java" afterPath="$PROJECT_DIR$/consumerser/src/test/java/com/share/consumerser/ConsumerSerApplicationTests.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -489,6 +479,16 @@
               <item name="consumerser" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="consumerser" type="462c0819:PsiDirectoryNode" />
+              <item name="control" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="share" type="b2602c69:ProjectViewProjectNode" />
+              <item name="share" type="462c0819:PsiDirectoryNode" />
+              <item name="consumerser" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -938,7 +938,7 @@
       <workItem from="1536228799757" duration="591000" />
       <workItem from="1536229728970" duration="953000" />
       <workItem from="1536242264166" duration="4212000" />
-      <workItem from="1536461337160" duration="20096000" />
+      <workItem from="1536461337160" duration="20186000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <created>1536242992511</created>
@@ -982,11 +982,18 @@
       <option name="project" value="LOCAL" />
       <updated>1536504275530</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="添加kafka自定义消息通道">
+      <created>1536506198409</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1536506198409</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55532000" />
+    <option name="totallyTimeSpent" value="55622000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
