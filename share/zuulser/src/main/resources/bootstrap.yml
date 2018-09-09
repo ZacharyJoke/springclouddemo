@@ -39,7 +39,7 @@ zuul:
 
 consumerser:
   ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.WeightedResponseTimeRule
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.WeightedResponseTimeRule        #application方式配置均衡策略
     ConnectTimeout: 1000
     ReadTimeout: 3000
     MaxTotalHttpConnections: 500
@@ -51,3 +51,6 @@ consumerser:
 #  * NFLoadBalancePingClassName: should implement IPing
 #  * NIWSServerListClassName: should implement ServerList
 #  * NIWServerListFilterClassName: should implement ServerListFilter
+
+
+signing.key: "345345fsdfsf5345"

@@ -1,4 +1,4 @@
-package com.share.helloser;
+package com.share.productorser;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

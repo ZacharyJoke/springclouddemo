@@ -10,13 +10,26 @@ spring:
   cloud:              #kafka集成方式   数据先存储在kafka中然后zipkin从kafka中读取追踪数据
       stream:
          kafka:
-           binder:
-             brokers: 127.0.0.1
-             defaultBrokerPort: 9092
-             zkNodes: 127.0.0.1
-             defaultZkPort: 2181
-             autoCreateTopics: true
-             autoAddPartitions: true
+            binder:
+                 brokers: 127.0.0.1
+                 defaultBrokerPort: 9092
+                 zkNodes: 127.0.0.1
+                 defaultZkPort: 2181
+                 autoCreateTopics: true
+                 autoAddPartitions: true
+         bindings:
+            output:            #默认发送通道
+                destination:  orgChangeTopicDefault    #定义topic
+                content-type: application/json  #传输格式
+                group: licensingGroupDefault
+            outboundOrgChanges:    #自定义消息发送通道
+                destination:  orgChangeTopic   #定义topic
+                content-type: application/json  #传输格式
+                group: licensingGroup
+            outboundOrgChanges2:    #自定义消息发送通道
+                destination:  orgChangeTopic2    #定义topic
+                content-type: application/json  #传输格式
+                group: licensingGroup2
 
 
 eureka:
@@ -27,6 +40,4 @@ eureka:
     instance-id: ${spring.cloud.client.ipAddress}:${server.port}:${spring.application.name}
   client:
     registry-fetch-interval-seconds: 10
-    healthcheck:
-      enabled: true
 

@@ -1,7 +1,7 @@
-package com.share.helloser.control;
+package com.share.productorser.control;
 
 
-import com.share.helloser.bean.User;
+import com.share.productorser.bean.User;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

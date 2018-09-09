@@ -1,4 +1,4 @@
-package com.share.helloser.bean;
+package com.share.productorser.bean;
 
 public class User {
 
