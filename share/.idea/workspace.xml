@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d971fa0-36a8-45df-80f0-1e25e56f2ed8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configser/pom.xml" afterPath="$PROJECT_DIR$/configser/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configser/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/configser/src/main/resources/application.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumerser/pom.xml" afterPath="$PROJECT_DIR$/consumerser/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumerser/src/main/java/com/share/helloconsumer/ConsumerSerApplication.java" afterPath="$PROJECT_DIR$/consumerser/src/main/java/com/share/helloconsumer/ConsumerSerApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumerser/src/main/java/com/share/helloconsumer/api/HelloApi.java" afterPath="$PROJECT_DIR$/consumerser/src/main/java/com/share/helloconsumer/api/HelloApi.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumerser/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/consumerser/src/main/resources/application.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oauthser/pom.xml" afterPath="$PROJECT_DIR$/oauthser/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/productorser/pom.xml" afterPath="$PROJECT_DIR$/productorser/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/productorser/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/productorser/src/main/resources/application.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.txt" afterPath="$PROJECT_DIR$/readme.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zuulser/pom.xml" afterPath="$PROJECT_DIR$/zuulser/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zuulser/src/main/java/com/share/zuulser/ZuulserApplication.java" afterPath="$PROJECT_DIR$/zuulser/src/main/java/com/share/zuulser/ZuulserApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zuulser/src/main/resources/bootstrap.yml" afterPath="$PROJECT_DIR$/zuulser/src/main/resources/bootstrap.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/productorser/src/main/java/com/share/helloser/ProductorserApplication.java" afterPath="$PROJECT_DIR$/productorser/src/main/java/com/share/productorser/ProductorserApplication.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/productorser/src/main/java/com/share/helloser/bean/User.java" afterPath="$PROJECT_DIR$/productorser/src/main/java/com/share/productorser/bean/User.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/productorser/src/main/java/com/share/helloser/control/ApiController.java" afterPath="$PROJECT_DIR$/productorser/src/main/java/com/share/productorser/control/ApiController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/productorser/src/test/java/com/share/helloser/ProductorserApplicationTests.java" afterPath="$PROJECT_DIR$/productorser/src/test/java/com/share/productorser/ProductorserApplicationTests.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -265,8 +246,8 @@
       <file leaf-file-name="application.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/productorser/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="41" column="39" lean-forward="true" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+            <state relative-caret-position="368">
+              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -927,7 +908,7 @@
       <workItem from="1536228799757" duration="591000" />
       <workItem from="1536229728970" duration="953000" />
       <workItem from="1536242264166" duration="4212000" />
-      <workItem from="1536461337160" duration="17552000" />
+      <workItem from="1536461337160" duration="18134000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <created>1536242992511</created>
@@ -957,11 +938,18 @@
       <option name="project" value="LOCAL" />
       <updated>1536248222326</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="添加kafka自定义消息通道">
+      <created>1536503647595</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1536503647595</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52988000" />
+    <option name="totallyTimeSpent" value="53570000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1035,7 +1023,8 @@
     <MESSAGE value="初始化" />
     <MESSAGE value="更新readme" />
     <MESSAGE value="修改配置文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改配置文件" />
+    <MESSAGE value="添加kafka自定义消息通道" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加kafka自定义消息通道" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1494,8 +1483,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/productorser/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="41" column="39" lean-forward="true" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+        <state relative-caret-position="368">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
         </state>
       </provider>
