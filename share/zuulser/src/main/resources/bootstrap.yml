@@ -16,8 +16,8 @@ spring:
       discovery:
         enabled: true
         service-id: configser
-      profile: prod
-      label: master
+      profile: prod       #激活环境
+      label: master     #分支
       username: config
       password: 123456
     inetutils:
