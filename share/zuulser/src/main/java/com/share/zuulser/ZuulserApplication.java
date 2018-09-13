@@ -21,11 +21,11 @@ public class ZuulserApplication {
     public RestTemplate getRestTemplate(){
         return new RestTemplate();
     }
-    //Annotation方式  权重方式均衡
-    @Bean
-    public IRule ribbonRule() {
-        return new WeightedResponseTimeRule();
-    }
+//    //Annotation方式  权重方式均衡
+//    @Bean
+//    public IRule ribbonRule() {
+//        return new WeightedResponseTimeRule();
+//    }
 
 
     public static void main(String[] args) {
