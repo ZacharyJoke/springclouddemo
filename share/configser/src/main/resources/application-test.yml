@@ -1,5 +1,3 @@
-server:
-  port: 8763
 spring:
   cloud:
     config:
@@ -9,7 +7,7 @@ spring:
         encrypt.enabled: false
         git:
           uri: https://github.com/liuxuleigitpub/config/
-          searchPaths: conf
+          searchPaths: test
           username: liuxuleigitpub
           password: nE8OM@sa%
     stream:
@@ -38,21 +36,5 @@ spring:
 #              searchLocations: confsvr/src/main/resources/config/licensingservice,
 #                               confsvr/src/main/resources/config/organizationservice
 ##              #searchLocations: classpath:config/,classpath:config/licensingservice
-
-eureka:
-  instance:
-    lease-expiration-duration-in-seconds: 20
-    lease-renewal-interval-in-seconds: 10
-    prefer-ip-address: true
-    instance-id: ${spring.cloud.client.ipAddress}:${server.port}:${spring.application.name}
-  client:
-    registry-fetch-interval-seconds: 10
-    healthcheck:
-      enabled: true
-
-security:
-  user:
-    name: config
-    password: 123456
 
 
