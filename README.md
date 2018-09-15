@@ -9,7 +9,7 @@
         <module>oauthser</module>       权限服务
         <module>turbineser</module>     hystrix熔断集群监控   使用：访问http://localhost:8767/hystrix    在页面输入框中输入需要监控的微服务地址  例：http://localhost:8764/hystrix.stream
         <module>zipkinser</module>   请求追踪   使用：访问 http://localhost:9411/   可根据下拉框中数据进行过滤查看
-        <module>zuulser</module>      路由网关
+        <module>zuulser</module>      路由网关   实现调用微服务负载均衡 集成oauthser进行拦截（暂未完成）
     </modules>
 
 
