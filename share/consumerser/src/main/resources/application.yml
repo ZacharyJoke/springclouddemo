@@ -45,4 +45,6 @@ eureka:
 feign:  ##集成feign时启用hystrix
   hystrix:
     enabled: true
+  httpclient:
+      enabled: true
 
