@@ -31,3 +31,5 @@ eureka:
     healthcheck:
       enabled: true
 
+signing.key: "345345fsdfsf5345"
+
