@@ -3,6 +3,7 @@ package com.lxl.productorser.services;
 import com.lxl.productorser.bean.Organization;
 import com.lxl.productorser.repository.OrganizationJpaRepository;
 import com.lxl.productorser.repository.OrganizationCrudRepository;
+import com.lxl.productorser.repository.OrganizationMybatis;
 import com.lxl.productorser.repository.OrganizationPagingAndSortingRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -23,6 +24,9 @@ public class OrganizationService {
     @Autowired
     private OrganizationPagingAndSortingRepository organizationPagingAndSortingRepository;
 
+    @Autowired
+    private OrganizationMybatis organizationMybatis;
+
 
     public Iterable<Organization> findAll() {
         return orgRepository.findAll();
@@ -34,7 +38,7 @@ public class OrganizationService {
     }
 
     public List<Organization> findAllByJpa() {
-        return organizationJpaRepository.findAll();
+        return organizationMybatis.findList();
     }
 
      public Organization getOrg(String organizationId) {

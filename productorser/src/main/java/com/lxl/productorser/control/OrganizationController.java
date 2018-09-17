@@ -9,13 +9,26 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-
-
-import java.awt.print.Printable;
 import java.util.List;
+
+/*
+*
+*
+* 使用Spring Data JPA CrudRepository 和JpaRepository 的好处：
+
+继承这些接口，可以使Spring找到自定义的数据库操作接口，并生成代理类，后续可以注入到Spring容器中；
+可以不写相关的sql操作，由代理类生成
+他们存在继承关系：
+
+　　PagingAndSortingRepository 继承 CrudRepository
+　　JpaRepository 继承 PagingAndSortingRepository
+
+也就是说， CrudRepository 提供基本的增删改查；PagingAndSortingRepository 提供分页和排序方法；JpaRepository 提供JPA需要的方法。
+*
+*
+* */
 
 @RestController
 @RequestMapping(value="organization")
