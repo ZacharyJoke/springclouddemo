@@ -13,6 +13,11 @@
     </modules>
 
 
+    kafka 自定义消息队列
+    数据库集成mysql mybatis jpa
+    
+    
+
 
      环境要求：
 
