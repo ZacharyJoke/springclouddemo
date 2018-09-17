@@ -1,6 +1,7 @@
 package com.lxl.consumerser.control;
 
 
+import com.lxl.consumerser.api.OrganizationApi;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.lxl.consumerser.api.HelloApi;
 import com.lxl.consumerser.bean.User;
@@ -22,6 +23,8 @@ public class ApiController {
 
     @Autowired
     private HelloApi helloApi;
+    @Autowired
+    private OrganizationApi organizationApi;
 
     @ApiOperation(value="getUser", notes="获取用户信息接口")
     @ApiImplicitParams({
