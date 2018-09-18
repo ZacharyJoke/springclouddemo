@@ -31,7 +31,7 @@ zuul:
   semaphore:
     max-semaphores: 30000    #Hystrix最大的并发请求
   retryable: true
-  ignoredServices: '*' #忽略默认路由，手动创建路由规则，防止生产者路由暴露
+  ignoredServices: '*' #忽略默认路由，手动创建路由规则，防止生产者路由暴露  zuul会自动创建每个服务的默认路由 根据serviceId生成前缀，安全考虑应关闭
   routes:
     consumerser:
       path: /api/**

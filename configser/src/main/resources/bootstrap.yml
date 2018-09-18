@@ -2,7 +2,7 @@ spring:
   application:
     name: configser
   profiles:
-      active: prod
+      active: prod    #配置多环境切换 方便打包发布
 server:
   port: 8763
 
