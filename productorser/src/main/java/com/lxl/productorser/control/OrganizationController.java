@@ -4,13 +4,17 @@ package com.lxl.productorser.control;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.lxl.productorser.bean.Organization;
+import com.lxl.productorser.bean.ResponseObject;
 import com.lxl.productorser.services.OrganizationService;
+import com.lxl.productorser.utils.ResponseStatus;
+import kafka.utils.Json;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+
 import java.util.List;
 
 /*
@@ -44,9 +48,11 @@ public class OrganizationController {
     }
 
     @RequestMapping(value="/list",method = RequestMethod.GET)//pagehelper分页
-    public PageInfo findAll(@RequestParam(defaultValue = "0") Integer page, @RequestParam(defaultValue = "1") Integer size) {
+    public ResponseObject findAll(@RequestParam(defaultValue = "0") Integer page, @RequestParam(defaultValue = "1") Integer size) {
         PageHelper.startPage(page, size);
+        Json
         List<Organization> o =  orgService.findAllByJpa();
+        ResponseObject responseObject =  new ResponseObject(ResponseStatus.Success,);
         PageInfo pageInfo = new PageInfo(o);
         return pageInfo;
     }
@@ -111,7 +117,7 @@ public class OrganizationController {
     }
 
     @RequestMapping(value="/{organizationId}",method = RequestMethod.DELETE)
-    @ResponseStatus(HttpStatus.NO_CONTENT)
+//    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteOrganization( @PathVariable("organizationId") String orgId) {
         orgService.deleteOrg(orgId);
 
