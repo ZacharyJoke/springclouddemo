@@ -27,8 +27,8 @@ public class Swagger2 {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("share项目 RESTful APIs")
-                .description("share项目后台api接口文档")
+                .title("xxxx项目 RESTful APIs")
+                .description("xxxx项目后台api接口文档")
                 .version("1.0")
                 .build();
     }

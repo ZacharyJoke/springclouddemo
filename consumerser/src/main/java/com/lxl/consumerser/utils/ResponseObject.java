@@ -1,4 +1,4 @@
-package com.lxl.productorser.bean;
+package com.lxl.consumerser.utils;
 
 public class ResponseObject {
     private Integer Status;//返回状态码

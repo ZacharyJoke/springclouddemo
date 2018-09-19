@@ -34,8 +34,14 @@ zuul:
   ignoredServices: '*' #忽略默认路由，手动创建路由规则，防止生产者路由暴露  zuul会自动创建每个服务的默认路由 根据serviceId生成前缀，安全考虑应关闭
   routes:
     consumerser:
-      path: /api/**
+      path: /api/**   #消费者路由
       serviceId: consumerser
+    zipkinser:
+      path: /**     #追踪路由
+      serviceId: zipkinser
+    productorser:
+      path: /pro/**     #生产者路由
+      serviceId: productorser
 
 consumerser:
   ribbon:

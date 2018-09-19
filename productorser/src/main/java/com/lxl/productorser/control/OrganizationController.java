@@ -1,21 +1,19 @@
 package com.lxl.productorser.control;
 
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.lxl.productorser.bean.Organization;
-import com.lxl.productorser.bean.ResponseObject;
+import com.lxl.productorser.utils.ResponseObject;
 import com.lxl.productorser.services.OrganizationService;
 import com.lxl.productorser.utils.ResponseStatus;
-import kafka.utils.Json;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
-import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 /*
 *
@@ -41,21 +39,23 @@ public class OrganizationController {
     @Autowired
     private OrganizationService orgService;
 
-    @RequestMapping(value="/{id}",method = RequestMethod.GET)
-    public Organization getOrganization(@PathVariable("id") String id) {
-        Organization o =  orgService.getOrg(id);
-        return o;
+    @RequestMapping(value="/{id}",method = RequestMethod.GET)   //jpa通过方法名自动完成sql
+    public String getOrganization(@PathVariable("id") String id) {
+        ResponseObject responseObject =  new ResponseObject(ResponseStatus.Success, orgService.getOrg(id),"success");
+        JSONObject responsejson = (JSONObject) JSON.toJSON(responseObject);
+        return responsejson.toString();
     }
 
-    @RequestMapping(value="/list",method = RequestMethod.GET)//pagehelper分页
-    public ResponseObject findAll(@RequestParam(defaultValue = "0") Integer page, @RequestParam(defaultValue = "1") Integer size) {
+    @RequestMapping(value="/listPageByPagehelper",method = RequestMethod.GET)//pagehelper分页
+    public String listPageByPagehelper(@RequestParam(defaultValue = "0") Integer page, @RequestParam(defaultValue = "1") Integer size) {
         PageHelper.startPage(page, size);
-        ResponseObject responseObject =  new ResponseObject(ResponseStatus.Success,orgService.findAllByJpa(),"success");
-        return responseObject;
+        ResponseObject responseObject =  new ResponseObject(ResponseStatus.Success, new PageInfo(orgService.findAllByJpa()),"success");
+        JSONObject responsejson = (JSONObject) JSON.toJSON(responseObject);
+        return responsejson.toString();
     }
 
-    @RequestMapping(value="/findAllByPagingAndSorting",method = RequestMethod.GET)//PagingAndSortingRepository分页
-    public Iterable<Organization> findAllByPagingAndSorting(@RequestParam(defaultValue = "0") Integer page, @RequestParam(defaultValue = "1") Integer size) {
+    @RequestMapping(value="/findListByPagingAndSorting",method = RequestMethod.GET)//PagingAndSortingRepository分页
+    public String findListByPagingAndSorting(@RequestParam(defaultValue = "0") Integer page, @RequestParam(defaultValue = "1") Integer size) {
 //        Pageable pageable =  new Pageable() {
 //            @Override
 //            public int getPageNumber() {
@@ -98,8 +98,9 @@ public class OrganizationController {
 //            }
 //        };
         Pageable pageable = new PageRequest(page,size);
-        Page<Organization> o =  orgService.findAllByPagingAndSorting(pageable);
-        return o;
+        ResponseObject responseObject =  new ResponseObject(ResponseStatus.Success, orgService.findAllByPagingAndSorting(pageable),"success");
+        JSONObject responsejson = (JSONObject) JSON.toJSON(responseObject);
+        return responsejson.toString();
     }
 
     @RequestMapping(value="/{organizationId}",method = RequestMethod.PUT)

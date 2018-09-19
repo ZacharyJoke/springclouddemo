@@ -23,8 +23,6 @@ public class ApiController {
 
     @Autowired
     private HelloApi helloApi;
-    @Autowired
-    private OrganizationApi organizationApi;
 
     @ApiOperation(value="getUser", notes="获取用户信息接口")
     @ApiImplicitParams({

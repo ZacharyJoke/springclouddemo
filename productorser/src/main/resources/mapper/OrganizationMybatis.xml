@@ -12,28 +12,8 @@
     <result column="name" jdbcType="VARCHAR" property="name" />
   </resultMap>
 
-
   <select id="findList" resultMap="BaseResultMap">
-    SELECT
-    *
-    FROM organizations
-    <!--<where>-->
-      <!--<if test="id != null and id != ''  ">-->
-        <!--AND ID = #{id}-->
-      <!--</if>-->
-      <!--<if test="userId != null and userId != ''  ">-->
-        <!--AND user_id = #{userId}-->
-      <!--</if>-->
-      <!--<if test="currency != null and currency != ''  ">-->
-        <!--AND currency = #{currency}-->
-      <!--</if>-->
-      <!--<if test="walletAddress != null and walletAddress != ''  ">-->
-        <!--AND wallet_address = #{walletAddress}-->
-      <!--</if>-->
-    <!--</where>-->
+    SELECT * FROM organizations
   </select>
-
-
-
 
 </mapper>
