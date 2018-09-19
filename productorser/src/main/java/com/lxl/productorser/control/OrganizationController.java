@@ -50,11 +50,8 @@ public class OrganizationController {
     @RequestMapping(value="/list",method = RequestMethod.GET)//pagehelper分页
     public ResponseObject findAll(@RequestParam(defaultValue = "0") Integer page, @RequestParam(defaultValue = "1") Integer size) {
         PageHelper.startPage(page, size);
-        Json
-        List<Organization> o =  orgService.findAllByJpa();
-        ResponseObject responseObject =  new ResponseObject(ResponseStatus.Success,);
-        PageInfo pageInfo = new PageInfo(o);
-        return pageInfo;
+        ResponseObject responseObject =  new ResponseObject(ResponseStatus.Success,orgService.findAllByJpa(),"success");
+        return responseObject;
     }
 
     @RequestMapping(value="/findAllByPagingAndSorting",method = RequestMethod.GET)//PagingAndSortingRepository分页
