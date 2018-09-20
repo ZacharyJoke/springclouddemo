@@ -48,3 +48,8 @@ feign:  ##集成feign时启用hystrix
   httpclient:
       enabled: true
 
+
+security:
+  oauth2:
+   resource:
+      userInfoUri: http://localhost:8765/auth/user

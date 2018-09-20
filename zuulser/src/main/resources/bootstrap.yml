@@ -42,6 +42,9 @@ zuul:
     productorser:
       path: /pro/**     #生产者路由
       serviceId: productorser
+    oauthser:
+      path: /oauthser/**     #生产者路由
+      serviceId: oauthser
 
 consumerser:
   ribbon:

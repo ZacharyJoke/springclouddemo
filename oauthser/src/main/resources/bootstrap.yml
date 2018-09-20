@@ -19,4 +19,5 @@ spring:
         use-only-site-local-interfaces: true
 server:
   port: 8765
+  contextPath: /auth
 
