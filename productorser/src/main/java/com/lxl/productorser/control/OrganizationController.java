@@ -10,7 +10,6 @@ import com.lxl.productorser.utils.ResponseObject;
 import com.lxl.productorser.services.OrganizationService;
 import com.lxl.productorser.utils.ResponseStatus;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
@@ -56,47 +55,6 @@ public class OrganizationController {
 
     @RequestMapping(value="/findListByPagingAndSorting",method = RequestMethod.GET)//PagingAndSortingRepository分页
     public String findListByPagingAndSorting(@RequestParam(defaultValue = "0") Integer page, @RequestParam(defaultValue = "1") Integer size) {
-//        Pageable pageable =  new Pageable() {
-//            @Override
-//            public int getPageNumber() {
-//                return 0;
-//            }
-//
-//            @Override
-//            public int getPageSize() {
-//                return 1;
-//            }
-//
-//            @Override
-//            public int getOffset() {
-//                return 0;
-//            }
-//
-//            @Override
-//            public Sort getSort() {
-//                return null;
-//            }
-//
-//            @Override
-//            public Pageable next() {
-//                return null;
-//            }
-//
-//            @Override
-//            public Pageable previousOrFirst() {
-//                return null;
-//            }
-//
-//            @Override
-//            public Pageable first() {
-//                return null;
-//            }
-//
-//            @Override
-//            public boolean hasPrevious() {
-//                return false;
-//            }
-//        };
         Pageable pageable = new PageRequest(page,size);
         ResponseObject responseObject =  new ResponseObject(ResponseStatus.Success, orgService.findAllByPagingAndSorting(pageable),"success");
         JSONObject responsejson = (JSONObject) JSON.toJSON(responseObject);

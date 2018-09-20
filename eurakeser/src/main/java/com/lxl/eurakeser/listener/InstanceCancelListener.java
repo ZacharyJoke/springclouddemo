@@ -12,5 +12,6 @@ public class InstanceCancelListener implements ApplicationListener<EurekaInstanc
     @Override
     public void onApplicationEvent(EurekaInstanceCanceledEvent eurekaInstanceCanceledEvent) {
         logger.info("服务：{}，挂掉了",eurekaInstanceCanceledEvent.getAppName());
+        //可以实现邮件通知
     }
 }

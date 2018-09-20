@@ -1,7 +1,6 @@
 package com.lxl.productorser.config;
 
 import com.github.pagehelper.PageHelper;
-import org.apache.ibatis.plugin.Interceptor;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.springframework.context.annotation.Bean;
