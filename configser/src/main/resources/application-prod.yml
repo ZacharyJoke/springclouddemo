@@ -6,7 +6,7 @@ spring:
       server:
         encrypt.enabled: false
         git:
-          uri: https://github.com/liuxuleigitpub/config/
+          uri: https://github.com/liuxuleigithub/springclouddemo/config/
           searchPaths: prod
           username: liuxuleigitpub
           password: nE8OM@sa%
