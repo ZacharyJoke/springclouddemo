@@ -8,6 +8,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 import org.springframework.cloud.stream.annotation.EnableBinding;
+//import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
 
 @SpringBootApplication
 @EnableEurekaClient
@@ -15,6 +16,7 @@ import org.springframework.cloud.stream.annotation.EnableBinding;
 @EnableHystrix
 @EnableCircuitBreaker
 @EnableBinding(CustomChannels.class)//自定义通道
+//@EnableResourceServer
 //@EnableBinding(Source.class)//默认
 public class ProductorserApplication {
 

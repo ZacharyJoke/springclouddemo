@@ -8,3 +8,9 @@ spring:
 server:
   port: 9411
 
+security:
+  basic:
+    enabled: true
+  user:
+    name: admin
+    password: 123456

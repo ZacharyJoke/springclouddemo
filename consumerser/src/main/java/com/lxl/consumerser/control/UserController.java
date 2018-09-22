@@ -31,11 +31,11 @@ public class UserController {
     @RequestMapping(value="/{userId}",method = RequestMethod.GET)
     public User getUser(@PathVariable("userId") String userId) {
 
-        try {                            //模拟异常
-            Thread.sleep(new Integer(10000));
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//        try {                            //模拟异常
+//            Thread.sleep(new Integer(10000));
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
 
         return userApi.getUser(userId);
     }
