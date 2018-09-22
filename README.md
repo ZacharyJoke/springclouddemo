@@ -16,6 +16,10 @@
     kafka 自定义消息队列
     数据库集成mysql mybatis jpa
     
+    token 获取地址 curl -X POST -vu client:secret http://localhost:8765/auth/oauth/token -H "Accept: application/json" -d "password=password&username=anil&grant_type=password&scope=read%20write"
+    
+    用户信息地址  curl -i -H "Authorization: Bearer b8396ad5-9a08-47c4-9275-dc93cc98a222" http://localhost:8765/auth/current
+    
     
 
 
