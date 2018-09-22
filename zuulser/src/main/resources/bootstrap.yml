@@ -43,7 +43,7 @@ zuul:
       path: /pro/**     #生产者路由
       serviceId: productorser
     oauthser:
-      path: /oauthser/**     #生产者路由
+      path: /**     #生产者路由
       serviceId: oauthser
 
 consumerser:
@@ -61,5 +61,13 @@ consumerser:
 #  * NIWSServerListClassName: should implement ServerList
 #  * NIWServerListFilterClassName: should implement ServerListFilter
 
+security:
+  oauth2:
+    resource:
+      clientId: zuulser
+      userInfoUri: http://localhost:8765/auth/current
+      accessTokenUri: http://localhost:8765/auth/oauth/token
+      grant-type: client_credentials
+      scope: server
 
 signing.key: "345345fsdfsf5345"

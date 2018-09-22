@@ -18,6 +18,13 @@ spring:
              minPartitionCount: 1
              autoCreateTopics: true
              autoAddPartitions: true
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://101.132.74.104:3306/springclouddemo
+    username: root
+    password: 'ABC456lxl:'
+  jpa:
+    show-sql: true
 
 
 eureka:
