@@ -63,11 +63,13 @@ consumerser:
 
 security:
   oauth2:
-    resource:
-      clientId: zuulser
-      userInfoUri: http://localhost:8765/auth/current
+    client:
       accessTokenUri: http://localhost:8765/auth/oauth/token
-      grant-type: client_credentials
-      scope: server
+      user-authorization-uri: http://localhost:8765/auth/oauth/authorize
+      clientId: webapp
+    resource:
+      userInfoUri: http://localhost:8765/auth/user
+      prefer-token-info: false
+
 
 signing.key: "345345fsdfsf5345"

@@ -52,8 +52,8 @@ feign:  ##集成feign时启用hystrix
 security:
   oauth2:
    resource:
-      clientId: consumerser
-      userInfoUri: http://localhost:8765/auth/current
-      accessTokenUri: http://localhost:8765/auth/oauth/token
-      grant-type: client_credentials
-      scope: server
+      id: consumerser
+      user-info-uri: http://localhost:8765/auth/user
+#      accessTokenUri: http://localhost:8765/auth/oauth/token
+      prefer-token-info: false
+

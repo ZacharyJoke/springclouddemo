@@ -9,6 +9,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableOAuth2Client;
 //import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
@@ -21,7 +22,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableCircuitBreaker
 @EnableSwagger2
 //@EnableResourceServer
-@EnableOAuth2Client
+//@EnableOAuth2Client
+@EnableGlobalMethodSecurity(prePostEnabled = true)
 //@EnableBinding(CustomChannels.class)    //自定义接收通道
 //@EnableBinding(Sink.class)    //默认接收
 public class ConsumerSerApplication {

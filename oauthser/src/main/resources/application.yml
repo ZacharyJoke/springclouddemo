@@ -19,12 +19,22 @@ spring:
              autoCreateTopics: true
              autoAddPartitions: true
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://101.132.74.104:3306/springclouddemo
+    platform: mysql
+    url: jdbc:mysql://101.132.74.104:3306/oauth2
     username: root
     password: 'ABC456lxl:'
+    driver-class-name: com.mysql.jdbc.Driver
   jpa:
     show-sql: true
+  redis:
+    host: 101.132.74.104
+    port: 6379
+    password: 123456
+
+security:
+  oauth2:
+    resource:
+      filter-order: 3
 
 
 eureka:
