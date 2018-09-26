@@ -11,8 +11,8 @@ import org.springframework.web.client.RestTemplate;
 
 @EnableDiscoveryClient
 @SpringBootApplication
-@EnableZuulProxy
-@EnableOAuth2Sso
+//@EnableZuulProxy
+//@EnableOAuth2Sso
 public class ZuulserApplication {
 
 
