@@ -61,15 +61,15 @@ consumerser:
 #  * NIWSServerListClassName: should implement ServerList
 #  * NIWServerListFilterClassName: should implement ServerListFilter
 
-security:
-  oauth2:
-    client:
-      accessTokenUri: http://localhost:8765/auth/oauth/token
-      user-authorization-uri: http://localhost:8765/auth/oauth/authorize
-      clientId: webapp
-    resource:
-      userInfoUri: http://localhost:8765/auth/user
-      prefer-token-info: false
-
-
-signing.key: "345345fsdfsf5345"
+#security:
+#  oauth2:
+#    client:
+#      accessTokenUri: http://localhost:8765/auth/oauth/token
+#      user-authorization-uri: http://localhost:8765/auth/oauth/authorize
+#      clientId: webapp
+#    resource:
+#      userInfoUri: http://localhost:8765/auth/user
+#      prefer-token-info: false
+#
+#
+#signing.key: "345345fsdfsf5345"
