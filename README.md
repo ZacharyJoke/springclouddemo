@@ -16,6 +16,8 @@
     kafka 自定义消息队列
     测试地址：http://localhost:8766/pro/kafka2/2
              http://localhost:8766/pro/kafka/2
+             
+     zipkin 密码 ： admin  123456
     
     数据库集成mysql mybatis jpa
     
