@@ -22,6 +22,13 @@
     
 效果图：
     ![Image text](https://github.com/liuxuleigithub/springclouddemo/blob/master/QQ%E6%88%AA%E5%9B%BE20181016145455.png)
+    ![Image text](https://github.com/liuxuleigithub/springclouddemo/blob/master/QQ%E6%88%AA%E5%9B%BE20181016145709.png)
+    ![Image text](https://github.com/liuxuleigithub/springclouddemo/blob/master/QQ%E6%88%AA%E5%9B%BE20181016145716.png)
+    ![Image text](https://github.com/liuxuleigithub/springclouddemo/blob/master/QQ%E6%88%AA%E5%9B%BE20181016163949.png)
+    ![Image text](https://github.com/liuxuleigithub/springclouddemo/blob/master/QQ%E6%88%AA%E5%9B%BE20181016165759.png)
+    ![Image text](https://github.com/liuxuleigithub/springclouddemo/blob/master/QQ%E6%88%AA%E5%9B%BE20181016170059.png)
+    ![Image text](https://github.com/liuxuleigithub/springclouddemo/blob/master/QQ%E6%88%AA%E5%9B%BE20181016170350.png)
+    
 
     
     
