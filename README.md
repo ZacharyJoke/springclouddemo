@@ -21,6 +21,7 @@
     
     
 效果图：
+    ![Image text](https://github.com/liuxuleigithub/springclouddemo/blob/master/QQ%E6%88%AA%E5%9B%BE20181016145455.png)
 
     
     
